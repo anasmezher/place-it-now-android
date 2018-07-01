@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Place It Now</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_server_Name">https://placeitnow.000webhostapp.com/</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_itemcontent">Itemcontent</string>
+    <string name="title_activity_add_image">AddImage</string>
+    <string name="title_activity_add_place">AddPlace</string>
+    <string name="title_activity_addplace">Addplace</string>
+    <string name="title_activity_main_activityvggggggggggg">MainActivityvggggggggggg</string>
+
+</resources>

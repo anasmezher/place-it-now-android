@@ -1,0 +1,136 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+     android:background="@drawable/bak3"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/aa"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/Place_name_edit_txt "
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText1"
+                android:layout_weight="1"
+                android:hint="Place Name" />
+
+            <EditText
+                android:id="@+id/Place_country_edit_txt "
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Place_name "
+                android:layout_below="@+id/Place_name "
+                android:layout_weight="1"
+                android:hint="Place Country" />
+
+            <EditText
+                android:id="@+id/Place_city_edit_txt "
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/Place_country"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/Place_country"
+                android:layout_weight="1"
+                android:hint="Place City" >
+
+                <requestFocus />
+            </EditText>
+
+            <Spinner
+                android:id="@+id/Place_Type_Spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Place_name "
+                android:layout_below="@+id/Place_name "
+                android:layout_weight="1"
+                android:hint="Place Type" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aa2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/aa3"
+            android:layout_alignLeft="@+id/aa"
+            android:layout_below="@+id/aa"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/Place_Long_edit_txtView  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:hint="Place longitude " />
+
+            <TextView
+                android:id="@+id/Place_Lati_edit_txtView  "
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:hint="Place latitude " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aa3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/aa2"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/Place_details_edittext  "
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Place details " />
+
+            <ImageView
+                android:id="@+id/camerashoww"
+                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="300dp" >
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom|center"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/btntakeimage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_camera" />
+
+            <ImageButton
+                android:id="@+id/btnsaveimag1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_save"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/btnretakeimag1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_revert"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
